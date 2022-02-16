@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:streamapp="clr-namespace:StreamApp"
+             x:Class="StreamApp.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <streamapp:VideoPlayer Grid.Row="0" x:Name ="videoPlayer" Url="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"></streamapp:VideoPlayer>
+        <StackLayout Grid.Row="1">
+
+            <Button Text="Play" HeightRequest="50" Clicked="Button_Clicked"></Button>
+
+            <Button Text="Stop" HeightRequest="50" Clicked="Button_Clicked_1"></Button>
+        </StackLayout>
+    </Grid>
+   
+</ContentPage>
